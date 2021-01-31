@@ -9,7 +9,7 @@ function Navbar() {
       <IconContext.Provider value={{ color: '#fff' }}>
         <nav className='nav-menu active'>
           <ul className='nav-menu-items' >
-            <a class="navbar-brand" href="#"><img src={process.env.PUBLIC_URL + './techokids.png'} width='70%' alt='Techokids' /></a>
+            <a class="navbar-brand" href="#"><img style={{margin:'0 0 0 30px'}} className='img-fluid' src={process.env.PUBLIC_URL + './techokids.png'} width='70%' alt='Techokids' /></a>
             {SidebarData.map((item, index) => {
               return (
                 <li key={index} className={item.cName}>

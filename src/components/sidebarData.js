@@ -7,43 +7,43 @@ import * as CgIcons from 'react-icons/cg';
 import * as TiIcons from 'react-icons/ti';
 export const SidebarData = [
   {
-    title: 'Dashboard',
+    title: ' Dashboard',
     path: '/',
     icon: <BsIcons.BsFillGrid1X2Fill />,
     cName: 'nav-text'
   },
   {
-    title: 'Courses',
+    title: ' Courses',
     path: '/Courses',
     icon: <AiIcons.AiOutlineBook />,
     cName: 'nav-text'
   },
   {
-    title: 'Profile',
+    title: ' Profile',
     path: '/Profile',
     icon: <CgIcons.CgProfile />,
     cName: 'nav-text'
   },
   {
-    title: 'Projects',
+    title: ' Projects',
     path: '/Projects',
     icon: <FaIcons.FaRocketchat/>,
     cName: 'nav-text'
   },
   {
-    title: 'Tech Support',
+    title: ' Support',
     path: '/Support',
     icon: <TiIcons.TiMessages />,
     cName: 'nav-text'
   },
   {
-    title: 'Invite',
+    title: ' Invite',
     path: '/Invite',
     icon: <Io5Icons.IoGiftOutline/>,
     cName: 'nav-text'
   },
   {
-    title: 'Settings',
+    title: ' Settings',
     path: '/Settings',
     icon: <Io5Icons.IoSettingsOutline />,
     cName: 'nav-text'

@@ -14,8 +14,8 @@ class Main extends Component{
     render(){
         return(
             <div className='wrapper'>
-                <div><Navbar /></div>
-                <div>
+                <div className='sidebar'><Navbar /></div>
+                <div className='mainbar'>
                     <Switch>
                         <Route exact path='/' component = {() => <Home />}/>
                         <Route path='/Profile' component={() => <Profile />} />

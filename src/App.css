@@ -5,19 +5,16 @@
   font-family: 'Lato', sans-serif;
 }
 
-.home,
-.reports,
-.products {
-  display: flex;
-  height: 90vh;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
+.wrapper{
+  height: 100%;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
 }
 
+.home,
+.reports,
 .navbar {
   background-color:#4863fc;
-  height: 80px;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -30,12 +27,10 @@
 }
 
 .nav-menu {
-  background-color: #4863fc;
-  width: 250px;
-  height: 100vh;
+  background-color: #253cbb;
+  height: 100%;
   display: flex;
   justify-content: center;
-  position: fixed;
   top: 0;
   left: -100%;
   transition: 850ms;
@@ -75,16 +70,68 @@
   width: 100%;
 }
 
-.navbar-toggle {
-  background-color: #4863fc;
-  width: 100%;
-  height: 80px;
-  display: flex;
-  justify-content: start;
-  align-items: center;
+.Home{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "box1 box1 box2" "box3 box3 box2" "box4 box4 box4";
 }
 
-.wrapper{
- display: grid;
- grid-template-columns: 30% 70%;
+.box1{
+  grid-area: box1;
+}
+
+.box2{
+  grid-area: box2;
+}
+
+
+.box3{
+  grid-area: box3;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "box31 box32";
+}
+
+.box31{
+  grid-area: box31;
+}
+
+.box32{
+  grid-area: box32;
+}
+
+.box4{
+  margin-top: 5%;
+  grid-area: box4;
+}
+
+.content-box{
+   margin: 5%;
+   min-height:auto;
+ }
+ 
+.card{
+  border-color: black;
+  height: fit-content;
+  border-radius: 3ch;
+}
+
+.box1 > .card{
+  border-color: white;
+}
+
+.mainbar{
+  min-height: fit-content;
+}
+
+.sidebar{
+  height:200vh;
+}
+
+.timer{
+  background-color: #253cbb ;
+  margin: 3px;
+  padding: 3px;
 }
