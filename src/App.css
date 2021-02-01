@@ -108,9 +108,9 @@
 }
 
 .content-box{
-   margin: 5%;
-   min-height:auto;
- }
+  margin: 5%;
+  min-height:auto;
+}
  
 .card{
   border-color: black;
@@ -127,6 +127,7 @@
 }
 
 .sidebar{
+  max-height: inherit;
   height:200vh;
 }
 
@@ -134,4 +135,26 @@
   background-color: #253cbb ;
   margin: 3px;
   padding: 3px;
+}
+
+@media all and (max-width:720px){
+  .sidebar{
+    height: fit-content;
+  }
+  .box3{
+    grid-area: box3;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "box31" "box32";
+  }
+  .sidebar{
+    height:400vh;
+  }
+  .Home{
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: unset;
+    grid-template-areas: "box1" "box2" "box3" "box3" "box4";
+  }
 }
